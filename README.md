@@ -277,6 +277,8 @@ Problems:
 
 Instead of using `% Number_of_Servers`, both **servers and keys are placed on a circular hash ring**.
 
+<img width="527" height="390" alt="image" src="https://github.com/user-attachments/assets/6a2fa0a0-7184-48f4-b6c2-46f6cad41587" />
+
 ```text
                  0
                 / \
@@ -454,6 +456,8 @@ No other keys are affected.
 # Virtual Nodes (VNodes)
 
 One problem with basic consistent hashing is **uneven data distribution**.
+
+<img width="516" height="397" alt="image" src="https://github.com/user-attachments/assets/30c14a41-54ea-4936-808b-ddb9dcfdd383" />
 
 Example:
 
