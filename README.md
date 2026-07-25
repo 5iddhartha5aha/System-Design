@@ -1,5 +1,5 @@
 # System-Design
-#I. Horizontal vs Vertical Scaling in System Design
+# I. Horizontal vs Vertical Scaling in System Design
 
 In system design, **scaling** is the process of increasing a system's capacity to handle more users, requests, or data. There are two primary approaches:
 
