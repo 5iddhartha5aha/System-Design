@@ -480,6 +480,15 @@ Server C stores much more data than A or B.
 
 Instead of placing one point per server, create multiple virtual nodes.
 
+A virtual node (vnode) is not a copy of a server. It is a logical partition (or logical position) of a physical server on the hash ring.
+
+Think of it like this:
+
+Physical server = the actual machine (or VM/container) that stores data.
+Virtual node = one of multiple logical identities that the same physical server has on the hash ring.
+
+<img width="446" height="357" alt="image" src="https://github.com/user-attachments/assets/cd74b33f-b64e-4822-b441-a64e2cf7b56b" />
+
 Example:
 
 ```text
