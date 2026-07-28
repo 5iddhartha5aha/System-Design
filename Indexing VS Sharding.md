@@ -1,4 +1,4 @@
-# Sharding vs Indexing
+# VI. Sharding vs Indexing
 
 **Sharding** and **indexing** are both techniques used to improve database performance, but they solve completely different problems.
 
