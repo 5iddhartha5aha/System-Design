@@ -1,4 +1,4 @@
-# Caching in Distributed Systems
+# VII. Caching in Distributed Systems
 
 **Caching** is the process of storing **frequently accessed data in a fast storage layer (cache)** so that future requests can be served much faster than retrieving data from the primary database.
 
@@ -459,3 +459,12 @@ Common technologies:
 - Memcached
 
 ---
+
+## Client, Server and Database
+
+<img width="997" height="362" alt="image" src="https://github.com/user-attachments/assets/ecb99e77-9848-461b-bd3a-5e452ba70229" />
+
+In real-world applications, all three (client, server and database) have their own cache memory.
+
+Many databases maintain an **internal cache** to avoid reading data from disk repeatedly. Frequently accessed pages, query results, or execution plans are stored in memory. The application is usually unaware of this cache.
+
