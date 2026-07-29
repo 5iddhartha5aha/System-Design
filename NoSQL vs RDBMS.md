@@ -1,4 +1,4 @@
-# NoSQL vs RDBMS
+# X. NoSQL vs RDBMS
 
 Databases are broadly classified into two categories:
 
