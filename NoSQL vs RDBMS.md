@@ -413,6 +413,21 @@ The schema changes frequently and the system serves millions of users.
 
 ---
 
+# YouTube
+
+YouTube does not store everything in a NoSQL database.
+
+A simplified architecture might look like:
+
+| Data | Database Type | Why |
+|------|---------------|-----|
+| User accounts | Relational (SQL) | Strong consistency and ACID transactions |
+| Video metadata (title, description, owner) | SQL or Distributed SQL | Transactions, consistency, and reliable metadata storage |
+| Video files | Object Storage (not a database) | Efficient storage of large binary files (videos) |
+| Comments | Distributed Databases (SQL/NoSQL depending on workload) | Massive scale and high read/write throughput |
+| Recommendations | NoSQL + Graph Databases + ML Systems | Fast lookups, relationship modeling, and personalized recommendations |
+| Cache | Redis / Memcached | Low-latency access to frequently requested data | 
+
 # Interview Summary
 
 > An **RDBMS** stores data in **tables** with a **fixed schema**, supports **SQL**, **ACID transactions**, and **complex joins**, making it ideal for applications that require strong consistency, such as banking and financial systems.
